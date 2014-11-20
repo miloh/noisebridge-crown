@@ -1,0 +1,4 @@
+NoisebridgeCrown.stl: \
+	/home/miloh/repos/noisebridge-crown/NoiseLogo.dxf \
+	/home/miloh/repos/noisebridge-crown/SpiralHat6.stl \
+	NoisebridgeCrown.scad

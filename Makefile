@@ -1,4 +1,4 @@
-all : Spiralhat6.stl NoisebridgeCrown.png
+all : NoiseBridgeCrown.stl NoiseBridgeCrown.png
 .PHONY: clean
 clean : 
 	rm -f *.png 
@@ -7,4 +7,4 @@ clean :
 	openscad -o $@ -d $@.deps $<
 
 %.png: %.scad
-	openscad NoisebridgeCrown.scad -o NoisebridgeCrown.png --camera=0,0,0,353.70,28,1.9,1950 
+	openscad NoiseBridgeCrown.scad -o NoiseBridgeCrown.png --camera=9.38,-7.4,72.96,73.50,0,42.70
