@@ -1,18 +1,13 @@
 
 module nblogo(){
-    scale([1,1,25])import("NoiseLogo.dxf",convexity=5);
+    scale([1,1,15])linear_extrude(height=10, center=true, convexity = 10)
+    import(file = "NoiseLogo.dxf");
 }
 
 
 union(){
-    rotate([0,0,-45])import("SpiralHat6.stl",convexity=5);
     scale([0.5,0.5,0.5])translate([-56,-196,133])rotate([-99,180,180])nblogo();
+    rotate([0,0,-45])import("SpiralHat6.stl",convexity=5);
 }
 
 
-//    translate([-590,-200,-220])cube ([600,275,600]);
-//    translate([-573,340,-220])
-//    rotate([0,0,-45])
-// cube([1,1,1]);
-//    translate([-500,-260,-220])rotate([0,0,-17])cube ([700,375,600]);
-//}
